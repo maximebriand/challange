@@ -1,0 +1,10 @@
+<button
+  [ngClass]="{
+    plain: TypeOfButtonEnum.plain === typeOfButton,
+    white: TypeOfButtonEnum.white === typeOfButton,
+    gradient: TypeOfButtonEnum.gradientBorder === typeOfButton,
+    small: size === 'small'
+  }"
+>
+  {{ buttonContent }}
+</button>

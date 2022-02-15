@@ -1,0 +1,36 @@
+button {
+  border: none;
+  color: var(--main-text-color);
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 900;
+  padding: 1rem 2rem;
+  border: solid 1px transparent;
+  border-radius: 2rem;
+  position: relative;
+
+  &.plain {
+    background-image: var(--main-gradient);
+    border: none;
+  }
+  &.white {
+    background: transparent;
+    border: 1px solid var(--main-text-color);
+  }
+
+  &.gradient {
+    background-color: transparent;
+    background-image: linear-gradient(
+        var(--main-bg-color),
+        var(--main-bg-color)
+      ),
+      var(--main-gradient);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+  }
+
+  &.small {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.2rem;
+  }
+}

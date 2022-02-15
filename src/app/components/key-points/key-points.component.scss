@@ -1,0 +1,26 @@
+figcaption {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-right: 5vw;
+  }
+  figure {
+    width: 5rem;
+    min-width: 5rem;
+    min-height: 5rem;
+    border-radius: 50%;
+    background-image: var(--main-gradient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 50%;
+    }
+  }
+  caption {
+    margin-left: 1.3rem;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+}

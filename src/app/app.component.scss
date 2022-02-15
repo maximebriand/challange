@@ -1,0 +1,62 @@
+section.hero {
+  margin-top: 9rem;
+  display: flex;
+  justify-content: space-between;
+
+  & > section {
+    &:first-child {
+      width: 55%;
+      h1 {
+        font-size: 7rem;
+        letter-spacing: 0.5rem;
+        font-weight: 900;
+        line-height: 10rem;
+
+        span {
+          background: var(--main-gradient);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+
+      & > div {
+        margin: 3rem auto;
+        app-button {
+          margin-right: 3rem;
+        }
+      }
+    }
+    &:last-child {
+      text-align: right;
+      width: 40%;
+      height: 100%;
+      content: "";
+
+      .nft-image {
+        width: 50vh;
+        height: 50vh;
+        border-radius: 50%;
+        background-image: var(--main-gradient);
+        position: relative;
+
+        img {
+          height: 50vh;
+          position: absolute;
+          top: 3vh;
+          left: -1rem;
+        }
+      }
+    }
+  }
+}
+
+section.keypoints {
+  margin-top: 5rem;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    li {
+      max-width: 25%;
+    }
+  }
+}

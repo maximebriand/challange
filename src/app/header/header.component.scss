@@ -1,0 +1,52 @@
+header {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  ul {
+    margin-left: 20%;
+    display: flex;
+    justify-content: space-around;
+    li {
+      margin: auto 1.8rem;
+    }
+  }
+
+  div.searchbar {
+    position: relative;
+    color: white;
+    input {
+      padding: 1rem 4rem 1rem 1rem;
+      border: double 1px transparent;
+      border-radius: 2rem;
+      background-image: linear-gradient(
+          var(--main-bg-color),
+          var(--main-bg-color)
+        ),
+        var(--main-gradient);
+      background-origin: border-box;
+      background-clip: padding-box, border-box;
+      position: relative;
+      color: var(--main-text-color);
+      outline: none;
+
+      &::placeholder {
+        color: var(--main-text-color);
+        font-weight: 200;
+        font-family: "Roboto", sans-serif;
+      }
+    }
+    &::after {
+      content: " ";
+      position: absolute;
+      top: 50%;
+      right: 1.5rem;
+      transform: translateY(-50%);
+      width: 10px;
+      height: 10px;
+      background-image: url("/assets/images/loupe-search-svgrepo-com.svg");
+      background-size: 10px 10px;
+    }
+  }
+}
